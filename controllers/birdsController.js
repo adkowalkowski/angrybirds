@@ -27,7 +27,7 @@ router.delete("/:id", (req, res) => {
 
 router.put("/:id", (req, res) => {
     birds[req.params.id] = req.body
-    res.send(birds[req.params.id]);
+    res.send(birds[req.params.id - 1]);
 })
 
 module.exports = router; 
